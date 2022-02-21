@@ -4,5 +4,8 @@ View(chart_2)
 library(ggplot2)
 library(dplyr)
 
+
 ggplot(data = chart_2) +
-  geom_col(mapping = aes(x = rating, y = release_year, fill=type))
+  geom_col(mapping = aes(x = rating, y = release_year, fill=type)) + ggtitle("Number of Netflix Shows and Movies Based on Ratings and Released Year")
+
+  
