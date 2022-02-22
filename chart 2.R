@@ -7,7 +7,7 @@ library(dplyr)
 
 options(scipen = 999)
 
-ggplot(data = dfRemain) +
+test2 <- ggplot(data = dfRemain) +
   geom_point(aes(x=rating, y = release_year)) + ggtitle("Netflix's ratings and released years")
 
 
