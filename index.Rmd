@@ -57,6 +57,7 @@ summary_info$num_observations <- nrow(data)
 summary_info$some_max_value <- data %>%
     filter(some_var == max(some_var, na.rm = T)) %>%
     select(some_label)
+summary_info$
 View(summary_info)
 ```
 
