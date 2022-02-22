@@ -36,7 +36,13 @@ The possibilities of streaming has shifted our world through genres, labels and 
 
 ### The Dataset
 
-We found this dataset on the website Kaggle about Netflix shows. The dataset was created by a software engineer named Chase Willden. He completed his Masters of Science at Boston University in data analytics. The data was collected because the author wanted to understand the distribution of the Netlfix show ratings as it hasn't really been understood by anyone due to the large number of Netflix shows. Since gathering data for each show individually would take a very long time, Chase collected the data by using the Netflix suggestion engine which allowed him to gather data for one show and those that are recommended based on the certain selected show. There are 496 unique rows in this dataset with seven columns that contains strings, integers, and decimals. Some possible limitations or problems with this data is that the ratings are completely based on Netflix users which doesn't necessarily represent the entire population of people who watch the shows. There are people who could possibly watch the shows on TV without Netflix or even pirate them which means that the data isn't necessarily accurate to the entire population. There are also people won't don't necessarily have access to Netflix meaning that the data can only represent a certain population without making assumptions about what some people "would like".
+We found this dataset on the website Kaggle about Netflix shows. The dataset was created by a software engineer named Chase Willden. He completed his Masters of
+Science at Boston University in data analytics. The data was collected because the author wanted to understand the distribution of the Netlfix show ratings as it 
+hasn't really been understood by anyone due to the large number of Netflix shows. Since gathering data for each show individually would take a very long time, Chase
+collected the data by using the Netflix suggestion engine which allowed him to gather data for one show and those that are recommended based on the certain selected
+show. There are 496 unique rows in this dataset with seven columns that contains strings, integers, and decimals. Some possible limitations or problems with this
+data is that the ratings are completely based on Netflix users which doesn't necessarily represent the entire population of people who watch the shows. There are
+people who could possibly watch the shows on TV without Netflix or even pirate them which means that the data isn't necessarily accurate to the entire population. There are also people won't don't necessarily have access to Netflix meaning that the data can only represent a certain population without making assumptions about what some people "would like".
 
 ### Implications
 
