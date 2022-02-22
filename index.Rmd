@@ -97,27 +97,26 @@ Write a summary paragraph of findings that includes the 5 values calculated from
 data <- read_csv("https://raw.githubusercontent.com/info-201b-wi22/exploratory-analysis-MiniPasta/main/archive/netflix_titles.csv?token=GHSAT0AAAAAABQJQPQGV54RWO526HV327CWYQ3FKJQ")
 summary_info <- list()
 summary_info$num_movies <- data %>%
-  group_by(type == 'Movies') %>%
-  summarise(count=n())
+  filter(type == "Movie") %>% summarize(count = n()) %>% pull(count)
 summary_info$num_tv <- data %>%
-  group_by(type == 'TV Show') %>%
-  summarise(count=n())
-summary_info$num_directors <- data %>%
-  filter(type=="Directors") %>% group_by(director) %>% summarise(count=n())
-summary_info$num_country <- data %>%
-  filter(type=="Movie") %>% group_by(director) %>% summarise(count=n())
-  summary_info$max_country <- data %>%
-  filter (country == max(country, na.rm == TRUE))
-  %>% pul1 (country)
-
+  filter(type == "TV Show") %>% summarize(count = n()) %>% pull(count)
+summary_info$num_us <- data %>%
+  filter(country == "United States") %>% summarize(count = n()) %>% pull(count)
+summary_info$num_2021 <- data %>%
+  filter(release_year == "2021") %>% summarize(count = n()) %>% pull(count)
+summary_info$num_inttv <- data %>%
+  filter(listed_in == "International TV Shows") %>% summarize(count = n()) %>% pull(count)
 View(summary_info)
 ```
-
+This data include the number of unique movies, the number of unique TV Shows, 
+amount in us, amount  in 2021 and amount that are listed as international tv shows
 
 
 ### Table
 
-Include a table of aggregate information
+```{r, echo = FALSE, warning=F, message=F, code = readLines ("aggregate table script.R")}
+print(df)
+```
 
 Describe why you included the table and what information it reveals
 
