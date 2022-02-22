@@ -96,11 +96,20 @@ Write a summary paragraph of findings that includes the 5 values calculated from
 ```
 data <- read_csv("https://raw.githubusercontent.com/info-201b-wi22/exploratory-analysis-MiniPasta/main/archive/netflix_titles.csv?token=GHSAT0AAAAAABQJQPQGV54RWO526HV327CWYQ3FKJQ")
 summary_info <- list()
-summary_info$num_observations <- nrow(data)
-summary_info$some_max_value <- data %>%
-    filter(some_var == max(some_var, na.rm = T)) %>%
-    select(some_label)
-summary_info$
+summary_info$num_movies <- data %>%
+  group_by(type == 'Movies') %>%
+  summarise(count=n())
+summary_info$num_tv <- data %>%
+  group_by(type == 'TV Show') %>%
+  summarise(count=n())
+summary_info$num_directors <- data %>%
+  filter(type=="Directors") %>% group_by(director) %>% summarise(count=n())
+summary_info$num_country <- data %>%
+  filter(type=="Movie") %>% group_by(director) %>% summarise(count=n())
+  summary_info$max_country <- data %>%
+  filter (country == max(country, na.rm == TRUE))
+  %>% pul1 (country)
+
 View(summary_info)
 ```
 
