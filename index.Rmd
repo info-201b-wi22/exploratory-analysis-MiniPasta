@@ -115,7 +115,7 @@ amount in us, amount  in 2021 and amount that are listed as international tv sho
 ### Table
 
 ```{r, echo = FALSE, warning=F, message=F, code = readLines ("aggregate table script.R")}
-print(df)
+source("aggregate table script.R")
 ```
 The purpose of thies table is to show numerically, the change in number of movies and tv shows over the progression of the years adding on you can see more clearly the differences between years for movies or tv shows and infer why the difference occurred. 
 
