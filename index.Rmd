@@ -116,7 +116,8 @@ What are the top 10 directors with the largest number of movies?
 ```{r, echo = FALSE, warning=F, message=F, code = readLines ("chart1.R")}
 print(test)
 ```
-The bar plot tells us that Rajiv Chilaka has directed the largest number of movies, the number is 19, Raúl Campos, Jan Suter has directed the second largest number of movies, the number if 18, Suhas Kadav has directed the third largest number of movies, the number is 16.
+The bar plot tells us that Rajiv Chilaka has directed the largest number of movies, the number is 19, Raúl Campos, Jan Suter has directed the second largest number
+of movies, the number if 18, Suhas Kadav has directed the third largest number of movies, the number is 16.
 
 
 
@@ -126,7 +127,9 @@ The bar plot tells us that Rajiv Chilaka has directed the largest number of movi
 print(test2)
 ```
 
-We chose this chart in order to  see all the types of ratings that exists in Netflix's streaming service and also compare it to the release year of that show or movie. This furthermore reveals a history of the industrial discourses surrounding Netflix's audience data and concludes the discussion of streaming audience data that situates in the emerging's realities of "popular" television in the context the medium's broader transformation and continuities.
+We chose this chart in order to  see all the types of ratings that exists in Netflix's streaming service and also compare it to the release year of that show or 
+movie. This furthermore reveals a history of the industrial discourses surrounding Netflix's audience data and concludes the discussion of streaming audience data
+that situates in the emerging's realities of "popular" television in the context the medium's broader transformation and continuities.
 
 ### Chart 3
 
