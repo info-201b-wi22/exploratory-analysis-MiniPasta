@@ -9,4 +9,3 @@ test1 <- data %>% filter(type=="Movie") %>% group_by(director) %>% summarise(cou
   coord_flip() +
   labs(x="Director", y="Number of movies", 
        title="Top 10 directors by number of movies")
-
