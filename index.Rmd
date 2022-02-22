@@ -63,15 +63,17 @@ Include a table of aggregate information
 Describe why you included the table and what information it reveals
 
 ### Chart 1
+What are the top 10 directors with the largest number of movies?
 
-Include a chart
 
-Describe why you chose this chart and what information it reveals
-
-Here's an example of how to run an R script inside an RMarkdown file:
-
-``````{r, echo = FALSE, code = readLines("chart1_example.R")}
+```{r, echo = FALSE, warning=F, message=F, code = readLines("chart1.R")}
 ```
+
+
+The bar plot tells us that Rajiv Chilaka has directed the largest number of movies, the number is 19, Raúl Campos, Jan Suter has directed the second largest number of movies, the number if 18, Suhas Kadav has directed the third largest number of movies, the number is 16.
+
+
+
 
 ### Chart 2
 
