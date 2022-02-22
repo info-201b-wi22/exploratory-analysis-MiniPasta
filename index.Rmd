@@ -50,11 +50,16 @@ While doing research, we might run into challenges with misinformation and biase
 
 Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
 
+```
+data <- read_csv("https://raw.githubusercontent.com/info-201b-wi22/exploratory-analysis-MiniPasta/main/archive/netflix_titles.csv?token=GHSAT0AAAAAABQJQPQGV54RWO526HV327CWYQ3FKJQ")
 summary_info <- list()
-summary_info$num_observations <- nrow(my_dataframe)
-summary_info$some_max_value <- my_dataframe %>%
+summary_info$num_observations <- nrow(data)
+summary_info$some_max_value <- data %>%
     filter(some_var == max(some_var, na.rm = T)) %>%
     select(some_label)
+View(summary_info)
+```
+
 
 ### Table
 
@@ -65,6 +70,7 @@ Describe why you included the table and what information it reveals
 ### Chart 1
 What are the top 10 directors with the largest number of movies?
 ```{r, echo = FALSE, warning=F, message=F, code = readLines ("chart1.R")}
+print(test)
 ```
 The bar plot tells us that Rajiv Chilaka has directed the largest number of movies, the number is 19, Raúl Campos, Jan Suter has directed the second largest number of movies, the number if 18, Suhas Kadav has directed the third largest number of movies, the number is 16.
 
