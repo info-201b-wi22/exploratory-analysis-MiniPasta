@@ -4,55 +4,57 @@ output: html_document
 ---
 
 ## Project title
-
-Give your project a concise, interesting title that summarizes the entirety of your project
+Exploring the Users' Experience on Netflix.com
 
 ### Authors
 
-Names of your team members
+Ronnie Chen: rchen24@uw.edu
+Eric Kuo: ekuo0210@uw.edu
+Gia An Nguyen: giaan01@uw.edu 
+Angela Li: angli03@uw.edu 
+Leo Ren:2319277580@qq.com &mengqr12@uw.edu
 
 ### Date
 
-Winter 2022
+February 21, Winter 2022
 
 ### Abstract
 
-No more than three sentences that summarize your project. Focus on the very most important aspects. For example: (1) "Our main question is .... This question is important because .... To address the question, we will ...." (2) "We are concerned with ..., because .... To address this concern, we plan to ...." (3) "Consider that .... This is important because .... Accordingly, we plan to ...."
+We are concerned about how Netflix’s suggestion engine will allow the consumers to have a more viewer friendly experience, due to the rising popularity of this streaming platform today. To address this concern, we plan to analyze user rating size in relation to rating to explore the influence of Rating level on user rating score based on Netflix's search engines.
 
 ### Keywords
 
-3-5 keywords that summarize your project.
-(e.g., "Keywords: human physiology; bicycle exercise; Gen Z; times-series data")
+Algorithms, suggestion engines, Netflix, streaming platform
 
 ### Introduction  
 
-Briefly introduce your project.  Include 3-5 research questions. What motivates the questions? Why are they important? (at least 200 words)
+In this project we decided to use a Kaggle dataset display Netflix shows and their ratings. Since the dataset incorporates Netflix’s suggestion engine into the aggregated data, our group was thinking about exploring research questions relating to its impact and extension. As such we’d like to explore how Netflix’s suggestion engine allow the consumers to have a more viewer friendly experience? How does their suggestion engine impact a show’s ratings and vice versa of how does show’s ratings impact Netflix’s suggestion engine? Does release year have an impact on the suggestion engine? Do ratings make an impact on when Netflix decides to stop hosting a show? The possibilities with this dataset are numerous. We chose this dataset because we wanted to work with a topic that was entertaining and interesting but still prompting. I think that since we all have our personal experiences with Netflix, when working with this data, we are more invested into our research and finding out the results since they have a direct relation to us as part of Netflix’s userbase. Furthermore, the impact of our findings is substantial considering the scope of Netflix’s impact. Especially during the pandemic, their userbase has grown significantly when people searched for entertainment options during lockdown. Since it also provides convenience from the comfort of your own home, I believe that any of our findings can make a substantial impact.
 
 ### Related Work  
 
-Describe your topic and related work in this space. You must include 3 citations to related work (URLs to similar work, high quality articles from the popular press, research papers, etc. ) Please use a standard citation style of your choice. (at least 200 words)
+The possibilities of streaming has shifted our world through genres, labels and categories our daily media consumption. Netflix uses machine learning and algorithms to break down its viewer's recommended shows and predicts other shows to keep their consumers interested. Take the trending Korean drama, Squid Game, for example, how did this show become so popular on this streaming platform? While the Korean show has its personal labeled genre, it also contains "hyper-specific categories" that are stored into "meta-data - the behind-the-scenes codes that support platforms like Spotify" (Beer). According to the Wired article, they gather "what people watch, what they watch after, what they watch before, what they watched a year ago, what they've watched recently, and what time of day" and Netflix combine this information "with more data aimed at understanding the content of the shows." This information from their viewers then gets categorized and analyzed into multiple taste groups that are used for machine learning algorithms. This method is implemented all across the word. A research study conducted by Gomez-Uribe and Neil Hunt indicated there is a collection of recommender algorithm that Netflix uses such as the personalized video ranker (PVR) and Top N video ranker algorithm that catalogs videos for each member profile on the homepage of Netflix, or the video-video similarity algorithm for Netflix's Because You Watched (BYW) recommendations. There are numerous algorithms implemented with Netflix's suggestion engines and with this project, we will dive into how exactly this huge streaming platform recommends similar shows through its User Rating Score, Rating Description, Release Year, Title, and more complete the user's Netflix experience.
 
 ### The Dataset
 
-Where did you find the data? Please include a link to the data source  
-Who collected the data?  
-How was the data collected or generated?  
-Why was the data collected?  
-How many observations (rows) are in your data?  
-How many features (columns) are in the data?  
-What, if any, ethical questions or questions of power do you need to consider when working with this data?  
-What are possible limitations or problems with this data?   (at least 200 words)
+We found this dataset on the website Kaggle about Netflix shows. The dataset was created by a software engineer named Chase Willden. He completed his Masters of Science at Boston University in data analytics. The data was collected because the author wanted to understand the distribution of the Netlfix show ratings as it hasn't really been understood by anyone due to the large number of Netflix shows. Since gathering data for each show individually would take a very long time, Chase collected the data by using the Netflix suggestion engine which allowed him to gather data for one show and those that are recommended based on the certain selected show. There are 496 unique rows in this dataset with seven columns that contains strings, integers, and decimals. Some possible limitations or problems with this data is that the ratings are completely based on Netflix users which doesn't necessarily represent the entire population of people who watch the shows. There are people who could possibly watch the shows on TV without Netflix or even pirate them which means that the data isn't necessarily accurate to the entire population. There are also people won't don't necessarily have access to Netflix meaning that the data can only represent a certain population without making assumptions about what some people "would like".
 
 ### Implications
 
-Assuming you answer your research questions, briefly describe the expected or possible implications for technologists, designers, and policymakers. (at least 150 words)
+We found this dataset on the website Kaggle about Netflix shows. The dataset was created by a software engineer named Chase Willden. He completed his Masters of Science at Boston University in data analytics. The data was collected because the author wanted to understand the distribution of the Netlfix show ratings as it hasn't really been understood by anyone due to the large number of Netflix shows. Since gathering data for each show individually would take a very long time, Chase collected the data by using the Netflix suggestion engine which allowed him to gather data for one show and those that are recommended based on the certain selected show. There are 496 unique rows in this dataset with seven columns that contains strings, integers, and decimals. Some possible limitations or problems with this data is that the ratings are completely based on Netflix users which doesn't necessarily represent the entire population of people who watch the shows. There are people who could possibly watch the shows on TV without Netflix or even pirate them which means that the data isn't necessarily accurate to the entire population. There are also people won't don't necessarily have access to Netflix meaning that the data can only represent a certain population without making assumptions about what some people "would like".
 
 ### Limitations & Challenges
-What challenges or limitations might you need to address with your project idea more broadly? Briefly discuss. (at least 150 words)
+
+While doing research, we might run into challenges with misinformation and biased resources. Because Netflix has millions of subscribers that watch a variety of shows, it would be challenging for us to analyze how interactions with Netflix can alter the preferences. Moreover, the designated factors such as rating that could impact the interests limit our ability to better understand what is the main influencer to these recommendations. There are also data limitations in which the data can not represent all subscribers, this will create bias in our findings. The time of a day, devices, and duration are some of the existing data to be used as inputs for Netflix to process in their algorithms, but duration might not be accurate especially if one kept playing shows without watching. We need to address more broadly the accuracy of data and view it more holistically.
 
 ### Summary Information
 
 Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
+
+summary_info <- list()
+summary_info$num_observations <- nrow(my_dataframe)
+summary_info$some_max_value <- my_dataframe %>%
+    filter(some_var == max(some_var, na.rm = T)) %>%
+    select(some_label)
 
 ### Table
 
