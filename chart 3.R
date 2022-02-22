@@ -8,7 +8,7 @@ library("ggplot2")
 num_tvshow_each_year <- chart_3 %>% group_by(release_year) %>% filter(type == "TV Show") %>% summarise(count = n())
 num_mov_each_year <- chart_3 %>% group_by(release_year) %>% filter(type == "Movie") %>% summarise(count = n())
 
-test <- ggplot() +
+test3 <- ggplot() +
   geom_smooth(data = num_tvshow_each_year, mapping = aes(x = release_year, y = count), color = "blue") +
   geom_smooth(data = num_mov_each_year, mapping = aes(x = release_year, y = count), color = "green") + xlab("Year Released") + ylab("Number") + ggtitle("Movie Growth(green) vs TV Show Growth(blue)")
 
