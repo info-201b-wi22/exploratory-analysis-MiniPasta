@@ -1,6 +1,5 @@
-chart_2 <- read.csv('https://raw.githubusercontent.com/info-201b-wi22/exploratory-analysis-MiniPasta/main/archive/netflix_titles.csv?token=GHSAT0AAAAAABQJQPQGV54RWO526HV327CWYQ3FKJQ')
-View(chart_2)
-dfRemain <- chart_2[-c(5542, 5795, 5814, 7538, 7313, 6828, 5990), ]
+
+dfRemain <- data[-c(5542, 5795, 5814, 7538, 7313, 6828, 5990), ]
 #Chart of the number of TV shows and movies based on ratings and the released year
 library(ggplot2)
 library(dplyr)

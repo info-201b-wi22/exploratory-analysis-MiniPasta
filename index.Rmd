@@ -93,8 +93,22 @@ address more broadly the accuracy of data and view it more holistically.
 
 Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
 
-```
-data <- read_csv("https://raw.githubusercontent.com/info-201b-wi22/exploratory-analysis-MiniPasta/main/archive/netflix_titles.csv?token=GHSAT0AAAAAABQJQPQGV54RWO526HV327CWYQ3FKJQ")
+
+```{r, include=FALSE, echo=FALSE, warning=FALSE, message=FALSE}
+library(reshape2)
+library(knitr)
+library(dplyr)
+library(xts)
+library(ggplot2)
+library(mapproj)
+library(maps)
+library(scales)
+data <- read.csv("https://raw.githubusercontent.com/info-201b-wi22/exploratory-analysis-MiniPasta/main/archive/netflix_titles.csv?token=GHSAT0AAAAAABQJQPQHL7KYBVJFG7PBFVV6YRRONTQ")
+
+options(scipen = 999)
+
+knitr::opts_chunk$set(error=TRUE)
+
 summary_info <- list()
 summary_info$num_movies <- data %>%
   filter(type == "Movie") %>% summarize(count = n()) %>% pull(count)
@@ -114,15 +128,17 @@ amount in us, amount  in 2021 and amount that are listed as international tv sho
 
 ### Table
 
-```{r, echo = FALSE, warning=F, message=F, code = readLines ("aggregate table script.R")}
+```{r, echo = FALSE, warning=F, message=F}
 source("aggregate table script.R")
+kable(df)
 ```
 The purpose of thies table is to show numerically, the change in number of movies and tv shows over the progression of the years adding on you can see more clearly the differences between years for movies or tv shows and infer why the difference occurred. 
 
 ### Chart 1
 What are the top 10 directors with the largest number of movies?
-```{r, echo = FALSE, warning=F, message=F, code = readLines ("chart1.R")}
-print(test)
+```{r,echo=FALSE, warning=FALSE, message=FALSE}
+source('chart1.R')
+print(test1)
 ```
 The bar plot tells us that Rajiv Chilaka has directed the largest number of movies, the number is 19, Raúl Campos, Jan Suter has directed the second largest number
 of movies, the number if 18, Suhas Kadav has directed the third largest number of movies, the number is 16.
@@ -131,7 +147,8 @@ of movies, the number if 18, Suhas Kadav has directed the third largest number o
 
 ### Chart 2
 
-```{r, echo = FALSE, warning=F, message=F, code = readLines ("chart2.R")}
+```{r,echo=FALSE, warning=FALSE, message=FALSE}
+source('chart2.R')
 print(test2)
 ```
 
@@ -141,8 +158,9 @@ that situates in the emerging's realities of "popular" television in the context
 
 ### Chart 3
 
-```{r, echo = FALSE, warning=F, message=F, code = readLines ("chart3.R")}
-print(test3)
+```{r,echo=FALSE, warning=FALSE, message=FALSE}
+source('chart_3.R')
+print(test_3)
 ```
 
 The purpose of including this chart is to see the difference in the trends between movies and tv shows over the course of the years.There's a chance that people prefer movies now today versus tv shows or vice versa. This can also give a perspective on the entertainment industry.Looking at this graph, we can see that the growth in movie is much steeper than that of tv shows which indicates that people today have preferred movies over tv shows on Netflix. 

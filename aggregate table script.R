@@ -8,14 +8,12 @@
 #When you display the table in your index.Rmd file, you must also describe why you included the table, and what information it reveals.
 
 #read in data
-original_data <- read.csv('https://raw.githubusercontent.com/info-201b-wi22/exploratory-analysis-MiniPasta/main/archive/netflix_titles.csv?token=GHSAT0AAAAAABQJQPQGV54RWO526HV327CWYQ3FKJQ')
-View(table)
 
 #load dplyr
 library(dplyr)
 
 #extract relevant information
-df<- data.frame(Type=original_data$type, Title=original_data$title, Release_Year=original_data$release_year, Rating=original_data$rating,Listed_In=original_data$listed_in)
+df<- data.frame(Type=data$type, Title=data$title, Release_Year=data$release_year, Rating=data$rating,Listed_In=data$listed_in)
 
 #use group_by to see how many movies and tv shows released each year
 grouped_movie_data<- df %>% group_by(Release_Year) %>%filter(Type == "Movie") %>% summarise(count = n())
